@@ -1,0 +1,33 @@
+<br>
+<div class="container">
+    <h2>Crear Proyecto</h2>
+    <form id="create_projects" method="get" action="/projects/create">
+        <div class="form-group">
+            <label for="name">Nombre</label>
+            <input name="name" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="description">Descripcion</label>
+            <input name="description" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="starts_on">Fecha Comienzo</label>
+            <input name="starts_on" type="date" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="ends_on">Fecha Término</label>
+            <input name="ends_on" type="date" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="state">Estado</label>
+            <select name="state" id="" class="form-control">
+                <option value="propuesta">Propuesta</option>
+                <option value="en progreso">En progreso</option>
+                <option value="terminado">Terminado</option>
+            </select>
+        </div>
+      <br>
+      <button type="submit" class="btn btn-dark btn-sm ml-3">Crear</button>
+      <button type="submit" class="btn btn-warning btn-sm"><%= link_to "Volver a Proyectos", projects_index_path%></button>
+    </form>
+</div>
